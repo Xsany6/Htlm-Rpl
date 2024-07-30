@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Lirik & Playlist Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1, h2 {
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            animation: fadeInUp 2s ease-in-out;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .lyrics {
+            flex: 2;
+        }
+
+        .cover {
+            margin-left: 20px;
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        .more-content {
+            display: none;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .table-container {
+            animation: fadeInUp 2s ease-in-out;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lyrics & Playlist</h1>
+
+    <!-- Lyrics Section -->
+    <div class="container">
+        <div class="lyrics">
+            <h2>Lagu Cover Shani-Yan: Rewrite The Stars - The Greatest Showman</h2>
+            <hr>
+            <pre>
+                you know I want
+                you it's not a secret I try to hide you 
+                know you want
+                me so don't keep saying a hand are tight
+                your Clarance not in the Cs and fate is
+                pulling your miles away and outter reach
+                from me but you're here in my heart so
+                who can stop me a fight aside that
+                you're my
+                
+                destiny what if we
+                reite the Stars say you were made to be
+                mine nothing can keep us aart you be the
+                one I was meant to fight it's it's up to
+                you and it's up to me no one can say
+                what we get to be why don't we
+                reite the Stars maybe the world could be
+                ours tonight
+                <span id="dots">...</span><span id="more" class="more-content">
+                you think it's
+                easy you think I don't want to run to
+                you but there are
+                mountains and there are doors that we
+                can't walk through I know you're
+                wondering why because we're able to be
+                just you and me Within These Walls but
+                when we go inside you're going to wake
+                up and see that it was hopeless after
+                all no no one can reite the Stars how
+                can you say you'll be mine everything
+                keeps us aart and I'm not the one you
+                were meant to fight it's not up to you
+                it's not up to me when everyone tells us
+                what we can be how can we
+                reite the Stars say that the world can be
+                yours tonight all I want is to
+                fly with you all I want is to
+                fall with you so just give me
+                all of you it feels
+                impossible impossible say that is
+                possible no one can reite the Stars how
+                can you say you will be mine everything
+                keeps us apart and I'm not the one you
+                were meant to fight it's not up to you
+                it's not up to me when everyone tells us
+                what we can be how can we reite the
+                Stars say that the world can be
+                ours tonight
+                </span>
+            </pre>
+            <button onclick="readMore()">Read More</button>
+        </div>
+        <img src="download.jpg" alt="Cover Image" class="cover" style="width:200px;height:auto;">
+    </div>
+
+    <!-- Playlist Section -->
+    <div class="table-container">
+        <h1>Playlist By Shani-Yan</h1>
+        <table> 
+            <tr>
+                <th colspan="2">Song Cover by Shani-Yan</th>
+            </tr>
+            <tr>
+                <th>Judul Song</th>
+                <th>Tanggal Rilis</th>
+            </tr>
+            <tr>
+                <td><a href="lyrick4.html">Taylor Swift</a></td>
+                <td>17 Jun 2023</td>
+            </tr>
+            <tr>
+                <td><a href="lyrics2.html">Somewhere Only We Know - Keane</a></td>
+                <td>2 Des 2023</td>
+            </tr>
+            <tr>
+                <td><a href="lyrics3.html">A Thousand Years</a></td>
+                <td>16 Sep 2023</td>
+            </tr>
+            <tr>
+                <td><a href="lyrics.html">Justin Bieber - Eenie Meenie</a></td>
+                <td>29 Jun 2024</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><a href="kontak.html" target="_blank">Tentang kami</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.querySelector("button");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read More"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read Less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
