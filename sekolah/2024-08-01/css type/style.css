@@ -1,0 +1,18 @@
+h3,ul,input
+        {
+            margin: 10px ;
+        }
+.warna
+        {
+            color: rgb(255, 0, 0);
+            font-size: 50px;
+        }
+.ukuran 
+    {
+        font-size: 50px;
+    }
+#jenis{
+    font-family: 'Courier New', Courier, monospace;
+}#model{
+    font-weight: bold;
+}
