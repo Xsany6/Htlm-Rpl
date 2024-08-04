@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      h1, h2, legend {
+        animation: fadeInDown 2s ease-in-out;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 2s ease-in-out;
+        width: 100%;
+        max-width: 800px;
+        text-align: left;
+      }
+
+      .container img {
+        width: 200px;
+        height: auto;
+        animation: zoomIn 2s ease-in-out;
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+
+      .container pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        line-height: 1.5;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      a {
+        color: #007BFF;
+        text-decoration: none;
+        animation: fadeInUp 2s ease-in-out;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 2s ease-in-out;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 20px;
+      }
+
+      input, textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+
+      input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: auto;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tentang Tokoh</h1>
+      <img src="./download.jpg" alt="Shania Yan" />
+      <hr />
+      <pre>
+Shania Yan adalah seorang YouTuber yang aktif dalam membuat konten covering lagu. Suaranya yang lembut dan halus, membuat ia digemari oleh banyak orang. Nama Shania Yan mulai dikenal, semenjak dirinya mencoba meng-cover lagu "Nothing Gonna Change My Love For You" karya George Benson. Video cover yang diunggahnya 10 bulan lalu ini bahkan telah ditonton lebih dari 34,4 juta kali, dan mendapatkan like sebanyak lebih dari 559 ribu.
+
+Shania Yan sebenarnya adalah YouTuber Indonesia, tetapi banyak yang tidak tahu karena dirinya memang lebih sering menyanyikan lagu dan menyapa penggemar dengan bahasa asing. Sementara mengenai informasi pribadi dirinya memang tak banyak yang bisa didapatkan. Ini karena penyanyi cantik satu ini memang tak banyak membahas tentang dirinya sendiri. Tetapi beberapa bulan terakhir, Shania Yan mendapatkan Silver Play Button dari YouTube, dan melakukan video unboxing. Dalam videonya tersebut, Shania Yan mencoba untuk menjawab setiap pertanyaan yang telah dilemparkan oleh penggemar-penggemarnya.
+
+<h2>Biodata Shania Yan</h2>
+Nama          : Shania Yan
+Tempat Lahir  : Surabaya, Indonesia
+Umur          : 20
+Agama         : Kristen
+Hobi          : Bernyanyi, Menonton Film
+Game Favorit  : Genshin Impact
+Anime Favorit : Fruits Basket, Snow White and The Red Hair, My Next Life as Villainess, Jujutsu Kaisen,
+                Demon Slayer
+Akun YouTube  : Shania Yan
+      </pre>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <hr />
+      
+        <fieldset>
+          <legend>Hubungi Kami</legend>
+          <label for="nama">Nama:</label>
+          <input type="text" name="nama" id="nama" placeholder="Nama Anda!" required />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email Anda!" required />
+          <br />
+          <label for="alamat">Saran:</label>
+          <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="Masukkan saran Anda di sini"></textarea>
+          <br />
+          <input type="submit" name="kirim" value="Kirim" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
