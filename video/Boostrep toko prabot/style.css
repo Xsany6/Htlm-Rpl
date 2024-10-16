@@ -1,0 +1,67 @@
+/* .lima {
+    height: 50px;
+}
+
+.seratus {
+    height: 100px;
+}
+
+.merah {
+    background: red;
+}
+
+.kuning {
+    background: yellow;
+}
+
+.hijau {
+    background: green;
+}
+
+.kir {
+    margin-left: auto;
+} */
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand img {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+@media (min-width:560px){
+    .navbar-brand img {
+        width: 100px;
+    }
+}
+
+.carousel-item img {
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:560px){
+    .carousel-item img {
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.jumbotron {
+    background-color: burlywood;
+}
+
+.container h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.card img {
+    height: 200px;
+    width: 300px;
+}
