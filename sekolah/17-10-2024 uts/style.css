@@ -1,0 +1,72 @@
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Make text stand out on darker background */
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for better readability */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    background-image: url('./img/bg-masthead.jpg');
+}
+
+/* Styling the logo area */
+h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Menu Button (if you use it) */
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle i {
+    color: #000;
+    font-size: 24px;
+}
