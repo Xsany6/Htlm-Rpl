@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box; /* Menambahkan box-sizing untuk kontrol ukuran elemen */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url("download.jpg"); */
+    background-size: cover; /* Menambahkan ukuran latar belakang */
+}
+
+header {
+    background-color: #a3a3a3;
+    padding: 20px;
+}
+
+nav img {
+    max-width: 50px; /* Mengatur ukuran logo */
+    height: 50px;
+    gap: 10px;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main p {
+    text-align: center;
+}
+
+.sejarah {
+    background-color: #fdf8f8; /* Mengubah warna latar belakang untuk bagian sejarah */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sejarah h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
