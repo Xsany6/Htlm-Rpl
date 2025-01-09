@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const hint = document.querySelector('p strong');
+    hint.style.cursor = 'pointer';
+    hint.addEventListener('mouseover', () => {
+        hint.style.color = 'blue';
+    });
+    hint.addEventListener('mouseout', () => {
+        hint.style.color = 'black';
+    });
+});
