@@ -28,8 +28,8 @@ if (isset($_POST['send_otp'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'ff29042028@gmail.com'; // Sesuaikan
-            $mail->Password = 'ijgl ywsb lbzt mndw'; // Password aplikasi email
+            $mail->Username = 'dfhgs@gmail.com'; // Sesuaikan
+            $mail->Password = 'ijgl trey lbzt mndw'; // Password aplikasi email
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
             $mail->setFrom('your-email@gmail.com', 'Your Website');
