@@ -1,0 +1,96 @@
+
+/* Navbar */
+
+.navbar {
+    background-color: #212121;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* Container */
+.cart-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cart-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Cart Table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cart-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn-remove, .btn-clear, .btn-checkout {
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn-remove {
+    background-color: #d9534f;
+}
+
+.btn-remove:hover {
+    background-color: #c9302c;
+}
+
+.btn-clear {
+    background-color: #f0ad4e;
+}
+
+.btn-clear:hover {
+    background-color: #ec971f;
+}
+
+.btn-checkout {
+    background-color: #5cb85c;
+}
+
+.btn-checkout:hover {
+    background-color: #4cae4c;
+}
+.cart-table img {
+    width: 10px;   /* Lebar gambar menjadi 100px */
+    height: 30px;   /* Menjaga rasio aspek gambar */
+     /* Memastikan gambar tetap terpotong dengan baik jika ukuran berbeda */
+}
