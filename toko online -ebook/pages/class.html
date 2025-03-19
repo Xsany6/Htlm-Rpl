@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom YouTube Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="" alt="Logo" class="logo">
+            <input type="text" placeholder="Search" class="search-bar">
+            <button class="search-button">🔍</button>
+        </div>
+        <div class="navbar-right">
+            <button class="menu-button">☰</button>
+            <img src="Xplor.png" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <aside class="sidebar">
+            <h3>Playlist</h3>
+            <ul class="video-list" id="video-list">
+
+            </ul>
+        </aside>
+
+        <section class="video-container">
+            <div class="video-display">
+                <video id="main-video" width="100%" controls>
+                    <source id="main-video-source"
+                        src="./KELAS CODING CYBER SECURITY-20241024T130907Z-001/KELAS CODING CYBER SECURITY/1 - Apa itu Cyber Security dan kenapa itu penting.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 id="video-title">Apa itu Cyber Security dan kenapa itu penting</h2>
+                <p id="video-description">Video ini menjelaskan dasar-dasar Cyber Security dan mengapa penting untuk
+                    memahaminya.</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Array video untuk playlist
+        const videos = [
+            {
+                title: "1. Apa itu Cyber Security dan kenapa itu penting",
+                src: "./KELAS CODING CYBER SECURITY-20241024T130907Z-001/KELAS CODING CYBER SECURITY/1 - Apa itu Cyber Security dan kenapa itu penting.mp4",
+                description: "Video ini menjelaskan dasar-dasar Cyber Security dan mengapa penting untuk memahaminya."
+            },
+            {
+                title: "2. Memahami 3 pilar dari Cyber Security",
+                src: "./KELAS CODING CYBER SECURITY-20241024T130907Z-001/KELAS CODING CYBER SECURITY/2 - Memahami 3 pilar dari Cyber Security.mp4",
+                description: "Pengenalan dasar mengenai jaringan komputer untuk pemahaman lebih lanjut dalam Cyber Security."
+            },
+            {
+                title: "3. Application Forensic - Hacking Keylogger",
+                src: "./KELAS CODING CYBER SECURITY-20241024T130907Z-001/KELAS CODING CYBER SECURITY/3 - Application Forensic - Hacking Keylogger.mp4",
+                description: "Mengenal berbagai ancaman dan risiko yang sering terjadi dalam dunia Cyber Security."
+            },
+            {
+                title: "4. Introduction to OWASP Top 10",
+                src: "./KELAS CODING CYBER SECURITY-20241024T130907Z-001/KELAS CODING CYBER SECURITY/4 - Introduction to OWASP Top 10.mp4",
+                description: "Mengenal berbagai ancaman dan risiko yang sering terjadi dalam dunia Cyber Security."
+            },
+            {
+                title: "5. DDOS DOS",
+                src: "./KELAS CODING CYBER SECURITY-20241024T130907Z-001/KELAS CODING CYBER SECURITY/5 - DDOS DOS.mp4",
+                description: "Mengenal berbagai ancaman dan risiko yang sering terjadi dalam dunia Cyber Security."
+            },
+        ];
+
+        // Function untuk menampilkan playlist
+        function displayPlaylist() {
+            const videoList = document.getElementById("video-list");
+
+            videos.forEach((video, index) => {
+                const listItem = document.createElement("li");
+                listItem.classList.add("video-item");
+                listItem.textContent = video.title;
+
+                listItem.addEventListener("click", () => {
+                    playVideo(index);
+                });
+
+                videoList.appendChild(listItem);
+            });
+        }
+
+
+        function playVideo(index) {
+            const videoPlayer = document.getElementById("main-video");
+            const videoSource = document.getElementById("main-video-source");
+            const videoTitle = document.getElementById("video-title");
+            const videoDescription = document.getElementById("video-description");
+
+
+            videoSource.src = videos[index].src;
+            videoPlayer.load();
+            videoTitle.textContent = videos[index].title;
+            videoDescription.textContent = videos[index].description;
+        }
+        displayPlaylist();
+    </script>
+</body>
+
+</html>
