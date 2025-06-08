@@ -1,0 +1,11 @@
+{
+    "require": {
+        "midtrans/midtrans-php": "^2.6",
+        "phpmailer/phpmailer": "^6.9",
+        "google/apiclient": "^2.18",
+        "pulkitjalan/google-apiclient": "*",
+        "dompdf/dompdf": "^3.1",
+        "league/oauth2-github": "^3.1",
+        "filament/filament": "*"
+    }
+}
