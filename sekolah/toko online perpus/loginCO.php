@@ -5,7 +5,7 @@ require_once 'vendor/autoload.php';
 
 $client = new Google_Client();
 $client->setClientId('572532228729-un5n6nq380h55qluuhelpmkrangu2u9c.apps.googleusercontent.com');
-$client->setClientSecret('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');
+$client->setClientSecret('GOCSPX-ThKZAUEfp4l-7s9xK1YHD');
 $client->setRedirectUri('http://localhost/html/projek-perpus/login.php');
 $client->addScope("email");
 $client->addScope("profile");
