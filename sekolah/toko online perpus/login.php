@@ -8,7 +8,7 @@ use League\OAuth2\Client\Provider\Github;
 
 $githubProvider = new Github([
     'clientId'     => 'Ov23liNOTBh0jx1qEBnm',
-    'clientSecret' => '5297d94ea99e4c364fb462276cf7bc1b094735a5',
+    'clientSecret' => '5297d94ea99e4c364fb462276cf7bc1b',
     'redirectUri'  => 'http://localhost/html/projek-perpus/login.php?provider=github',
 ]);
 
@@ -73,7 +73,7 @@ if (isset($_GET['provider']) && $_GET['provider'] === 'github') {
 // LOGIN GOOGLE
 $client = new Google_Client();
 $client->setClientId('572532228729-un5n6nq380h55qluuhelpmkrangu2u9c.apps.googleusercontent.com');
-$client->setClientSecret('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');
+$client->setClientSecret('GOCSPX-ThKZAUEfp4l-7s9xK1YHyED');
 $client->setRedirectUri('http://localhost/html/projek-perpus/login.php');
 $client->addScope("email");
 $client->addScope("profile");
@@ -129,7 +129,7 @@ if (isset($_GET['code']) && !isset($_GET['provider'])) {
 // FORM LOGIN MANUAL
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
-    $secretKey = '6Ley17YqAAAAAHJ0VcEYuVJtIMEVw-0QQlwBjz93';
+    $secretKey = '6Ley17YqAAAAAHJ0VcEYuVJtIMEV-jz93';
     $verifyURL = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse";
     $response = file_get_contents($verifyURL);
     $responseData = json_decode($response);
